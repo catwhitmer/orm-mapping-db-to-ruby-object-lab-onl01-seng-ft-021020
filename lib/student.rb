@@ -71,7 +71,7 @@ class Student
       FROM students
       WHERE grade = 9
     SQL
- 
+   end.first
   end
   
   def self.students_below_12th_grade
