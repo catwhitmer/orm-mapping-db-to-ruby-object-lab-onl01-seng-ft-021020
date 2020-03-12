@@ -74,7 +74,7 @@ class Student
  
     DB[:conn].execute(sql, grade).map do |row|
       self.new_from_db(row)
-    end.first #first element of the array
+    end
   end
   
   def self.students_below_12th_grade
